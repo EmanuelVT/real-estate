@@ -8,6 +8,7 @@
     "build": "gulp build",
     "dev:webpack": "webpack --mode development --env.NODE_ENV=dev",
     "build:webpack": "webpack --mode production --env.NODE_ENV=production",
+    "start": "node index.js",
     "watch": "gulp",
     "proxy": "gulp watch-proxy",
     "static:dev": "gulp static-dev",

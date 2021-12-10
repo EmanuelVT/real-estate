@@ -157,29 +157,10 @@ class App extends Component {
 
 		if (this.state.perks != '') {
 			newData = newData.filter(item => {
-				/*
-				this.state.perks.forEach(perk => {
-					
-					
-				});*/
-
-				console.log('Perks is: ' + this.state.perks[0]);
-
 				function isInExtras(perk) {
 					return item.extras.includes(perk);
 				}
-
-				console.log(this.state.perks.every(isInExtras));
-
 				return this.state.perks.every(isInExtras);
-
-				/*
-				this.state.perks.forEach(perk => {
-					if (item.extras.includes(perk)) {
-						console.log(item.address + ' has ' + perk);
-						return item;
-					}
-				});*/
 			});
 		}
 
